@@ -1,0 +1,16 @@
+#c.chat
+  .chat__Box
+    header.chat__Box--Header
+      figure.figure
+        img(src='img/loogo.jpg', alt='', width='50')
+      .name
+        span Power by Chat
+  .chat__List#chat__Append
+    
+  .chat__Message
+    form.form(action='', method="post", onsubmit="form(event);")
+      input(type="text", id="message", placeholder='Escribe tu mensaje')
+      input(type="submit", id="submit", style="display:none;" )
+      label(for="submit")
+        .icon
+          i.fa.fa-arrow-right

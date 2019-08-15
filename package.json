@@ -1,0 +1,19 @@
+{
+  "name": "chat",
+  "version": "0.0.1",
+  "description": "create chat and integrate intelligence artificial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edinsoncs",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dialogflow": "^0.8.0",
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "regex": "^0.1.1",
+    "socket.io": "^2.2.0"
+  }
+}

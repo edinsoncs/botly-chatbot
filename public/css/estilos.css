@@ -1,0 +1,124 @@
+h1,h2,h3,h4,h5,h6,p,ul,figure{margin:0;padding:0;}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+}
+.icon__Chat {
+	background:#F93262;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border-radius: 0.3rem;
+	position: fixed;
+	right: 1em;
+	bottom: 3em;
+	cursor:pointer;
+	z-index: 99;
+}
+.chat{
+	box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+	background:white;
+	border: 1px solid #eee;
+	width:330px;
+	position: fixed;
+	right: 0;
+	bottom: 4em;
+	margin: 4em 1em;
+	opacity: 0;
+}
+
+	.chat__Box--Header{
+		display: flex;
+		align-items: center;
+		padding: .8em .5em;
+		background: #F93262;
+		position: relative;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	.chat__Box--Header img{
+		height: 42px;
+		width: 42px;
+		border-radius: 50%;
+		position: absolute;
+		top: -1em;
+		border: 2px solid #F93262;
+	}
+	.chat__Box--Header span{
+		color:white;
+		margin-left: 4.5em;
+		font-size: 12px;
+		display: block;
+		font-family: 'Roboto', sans-serif;
+	}
+	.chat__List{
+		padding: 1em;
+		height: 35vh;
+		overflow-y: scroll;
+	}
+	.chat__List .list {
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 15px;
+	}
+	.chat__List .listed:last-child{
+		margin-bottom: 0px!important;
+	}
+	.chat__List .list .title{
+		font-size: 12px;
+		background:#F93262;
+		padding: 10px;
+		color: white;
+		border-radius: 6px 6px 6px 0;
+	}
+	.chat__List .list img{
+		margin-right: 10px;
+	}
+
+	.chat__List .list__Yo{
+		background: #EFF0F3;
+		color: #656774;
+		font-size: 12px;
+		padding: 10px;
+		margin-bottom: 15px;
+	}
+	.chat__Message{
+
+	}
+	.chat__Message form {
+		padding: 10px;
+		position:relative;
+	}
+	.chat__Message form .icon{
+		position: absolute;
+		right: 1.5em;
+		top:32%;
+		color:rgba(101, 103, 116, 0.5);
+		cursor: pointer;
+	}
+	.chat__Message input[type="text"] {
+		width: 100%;
+		resize: none;
+		box-sizing: border-box;
+		padding: 10px;
+		border-radius: 10rem;
+		font-size: 12px;
+		border: 1px solid #dede;
+		transition: all 0.5s linear;
+	}
+	.chat__Message input:hover{
+		border: 1px solid #F93262;
+	}
+	.chat__Message input:focus, .chat__Message input:hover{
+		outline: none;
+	}
+
+	.list__Image img {
+		object-fit: cover;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+	}
